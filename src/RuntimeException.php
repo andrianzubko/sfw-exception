@@ -2,4 +2,7 @@
 
 namespace SFW;
 
-class RuntimeException extends Exception {}
+class RuntimeException extends \RuntimeException implements Exception
+{
+    use ExceptionTrait;
+}

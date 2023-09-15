@@ -2,25 +2,15 @@
 
 namespace SFW;
 
-class Exception extends \Exception
+interface Exception extends \Throwable
 {
     /**
      * Sets the file in which the exception occurred.
      */
-    public function setFile(string $file): self
-    {
-        $this->file = $file;
-
-        return $this;
-    }
+    public function setFile(string $file): self;
 
     /**
      * Sets the line in which the exception occurred.
      */
-    public function setLine(int $line): self
-    {
-        $this->line = $line;
-
-        return $this;
-    }
+    public function setLine(int $line): self;
 }

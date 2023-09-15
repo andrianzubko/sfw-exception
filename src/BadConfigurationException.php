@@ -2,4 +2,4 @@
 
 namespace SFW;
 
-class BadConfigurationException extends Exception {}
+class BadConfigurationException extends LogicException {}

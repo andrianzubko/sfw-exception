@@ -2,4 +2,7 @@
 
 namespace SFW;
 
-class LogicException extends Exception {}
+class LogicException extends \LogicException implements Exception
+{
+    use ExceptionTrait;
+}
