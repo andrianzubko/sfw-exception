@@ -1,8 +1,8 @@
 <?php
 
-namespace SFW;
+namespace SFW\Exception;
 
-trait ExceptionTrait
+trait SettersTrait
 {
     /**
      * Sets the file in which the exception occurred.
